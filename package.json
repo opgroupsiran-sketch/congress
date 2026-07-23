@@ -1,0 +1,27 @@
+{
+  "name": "congress-bot",
+  "version": "1.0.0",
+  "description": "Medical Symposium Registration Telegram Bot",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish --env production",
+    "deploy:staging": "wrangler publish --env staging",
+    "preview": "wrangler publish --env staging",
+    "lint": "eslint src/ config/",
+    "format": "prettier --write 'src/**/*.js' 'config/**/*.js'"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.5",
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "itty-router": "^4.0.24"
+  }
+}
